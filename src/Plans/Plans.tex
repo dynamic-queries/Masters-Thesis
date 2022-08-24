@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paper=a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\title{Audacious Plans}
+\author{Rahul Manavalan}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+This file is a composite collection of ideas, some vetted, some freehand, some realistic, some far-fetched. 
+Nonetheless, these are my ideas and my own.
+It ought to be said, the ideas could also be inspired by some of the discussions with my peers.
+In such a case, due credit will be referenced with the permisison of the involved party.
+
+
+\section{Date: 24/08/2022}
+It is my intention to develop a novel model reduction algorithm for a class of partial differential equations.
+This endeavour is quite challenging as this involves a number of difficulties, namely
+\begin{enumerate}
+    \item The volume of available algorithms is huge.
+    \item Implementations of these algorithms is scarce.
+    \item Comparison of any kind, of the different algorithms is impossible.
+    \item Problems to which these algorithms are applied to, are different.
+\end{enumerate}
+
+In order to truly introduce a novel algorithm extensive study must be carried out and these studies need to be backed up,
+by implementing the algorithms for a wide variety of problems. The problem here is the availablity of appropriate opensource solvers,
+to the classes of PDEs that we want to solve. (As we shall consider the efficacy of intrusive and non-intrusive algorithms together.)
+
+As a result classes of high dimnensional, computationally challenging and frequently occuring PDEs in Science and Engineering need to be chosen,
+test cases properly studied and efficient numerical solvers need to be implemented using the best possible method for that problem. Needless to say,
+we should try to solve all the problems using the concept of Method of Lines as this allows for easy transformation in the latent space, especially when dealing with
+projection based Model Reduction Methods. 
+
+The question of best solver is contentious. In my vocabulary, any solver that allows for a fast implementation with sufficient accuray qualifies as the best.
+It should also be noted that in some instances, one might need to resort to using approximation techniques such as sparse grids to ensure that a surrogate to the model can be developed.
+This is especially handy should one need to generate data for some of the Operator Regression paradigm of surrogates.
+
+
+
+\end{document}
