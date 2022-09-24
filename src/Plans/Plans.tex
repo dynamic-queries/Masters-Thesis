@@ -63,6 +63,20 @@ That said, we shall place focus on the following disciplines of Model Reduction.
     \item Reduced Basis Method
 \end{enumerate}
 
-This would be a valuable addition to the pipeline.
+
+
+\section{Kernel for a Gaussian Process}
+Choosing the right kernel for a Gaussian Process is a tedious process. Kernel Optimizaiton is laborious. \\ 
+This is especially the case when dealing with multidimensional data as is the case when discretizing a partial differential equation. \\ 
+A physics informed approach to this problem might reduce the time it takes for optimization of the kernel. \\ 
+
+The idea is to augment the RBF kernel of a GP with the Green's function corresponding to that linear operator. \\ 
+This way more infomation about the geometry of the data might be encoded in the kernel. \\  
+
+One could hope for faster optimization of the kernel parameters and possibly extrapolation beyond the point of available data. \\ 
+If one can acheive lower variance in the regime outside the dataset then this is already an improvement with respect to the traditionally available methods. \\
+
+\section{Identifying Hamiltonian Systems from data.}
+There are two approaches to realize this. Felix's autoencoder and conventional SINDY. 
 
 \end{document}
