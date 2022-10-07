@@ -4,6 +4,10 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\bibliography{references}
+
 
 \title{Symmetry, Geometry, Machine Learning and all that.}
 \author{Rahul Manavalan}
@@ -15,6 +19,8 @@
 
 \section{Unstructured Notes}
 \input{src/Notes/Geometry_Preservation} % /home/dynamic-queries/Documents/Masters-Thesis/literature/MD/Symmetry_Preserving.pdf 
-\input{src/Notes/LR_Geometric_Deep_Learning} % /home/dynamic-queries/Documents/Masters-Thesis/literature/Geometry/Geometric_Machine_Learning.pdf
+% \input{src/Notes/LR_Geometric_Deep_Learning} % /home/dynamic-queries/Documents/Masters-Thesis/literature/Geometry/Geometric_Machine_Learning.pdf
+
+\printbibliography
 
 \end{document}
