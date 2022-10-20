@@ -1,11 +1,11 @@
 plans: 
-	pdflatex --output-directory="build" src/Plans/Plans.tex
+	pdflatex --output-directory="build" src/Plans/Plan.tex
 
 papers:
-	pdflatex --output-directory="build" src/Papers/Geometric_Symmetry_Detection.tex
+	pdflatex --output-directory="build" src/Papers/Paper.tex
 
-notes:
-	pdflatex --output-directory="build" src/Notes/Notes.tex
+thesis:
+	pdflatex --output-directory="build" src/Notes/Thesis.tex
 
 clean: 
 	rm -rf build/*
